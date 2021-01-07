@@ -5,8 +5,7 @@ using UnityEngine.EventSystems;
 public class TopdownCharacter : MonoBehaviour
 {
     public float moveSpeed = 5;                                     // Revealing the move speed to the inspector
-
-    public Collider2D interactRange;                                // The range at which the player can interact with
+    public float interactRange;                                     // The range at which the player can interact with
 
     private Vector2 direction = Vector2.down;                       // Makes down as the default direction
 
@@ -42,7 +41,7 @@ public class TopdownCharacter : MonoBehaviour
 
             // Get the mouse position in world coordinates
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (interactRange.OverlapPoint(mousePosition)) {        // Check if the mouse is within the player's reach
+            if (Vector2.Distance(transform.position, mousePosition)< interactRange) {        // Check if the mouse is within the player's reach
 
                 // Check if an interactible was clicked
                 InteractTrigger trigger = Physics2D.OverlapPoint(mousePosition)?.GetComponent<InteractTrigger>();
