@@ -13,10 +13,29 @@ public class TopdownCharacter : MonoBehaviour
     private Animator anim;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         rb = GetComponent<Rigidbody2D>();                           // Getting the Rigidbody2D component
         anim = GetComponent<Animator>();
+    }
+
+    private void Update() {
+        // Interact button
+        if (Input.GetMouseButtonDown(1))
+        {
+            // Get the mouse position in world coordinates
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            // Check if the mouse is within the player's reach
+            if (Vector2.Distance(transform.position, mousePosition) < interactRange)
+            {        
+                // Check if an interactible was clicked
+                InteractTrigger trigger = Physics2D.OverlapPoint(mousePosition)?.GetComponent<InteractTrigger>();
+                if (trigger)
+                {
+                    trigger.Trigger();                              // Run the trigger
+                }
+            }
+        }
     }
 
     // FixedUpdate is called once per fixed framerate frame
@@ -35,21 +54,6 @@ public class TopdownCharacter : MonoBehaviour
 		} else {
 			PlayAnimation("Idle", direction);
 		}
-
-        // Interact button
-        if (Input.GetMouseButtonDown(1)) {
-
-            // Get the mouse position in world coordinates
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if (Vector2.Distance(transform.position, mousePosition)< interactRange) {        // Check if the mouse is within the player's reach
-
-                // Check if an interactible was clicked
-                InteractTrigger trigger = Physics2D.OverlapPoint(mousePosition)?.GetComponent<InteractTrigger>();
-                if (trigger) {
-                    trigger.Trigger();                              // Run the trigger
-                }
-            }
-        }
     }
 
     // Plays the animation: animation_direction
