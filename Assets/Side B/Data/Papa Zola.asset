@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc4d08d4f9aaec46bf2df53404d8032, type: 3}
+  m_Name: Papa Zola
+  m_EditorClassIdentifier: 
+  characterName: Papa Zola
+  dialogBox: {fileID: 21300000, guid: 7c870b02d4a555749a562edd4847970a, type: 3}
