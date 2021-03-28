@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80bf35df72c83148bd4912f3f2c419c, type: 3}
+  m_Name: PressButtons
+  m_EditorClassIdentifier: 
+  stat: {fileID: 11400000, guid: fb6b5d608d710c6448fee12400d59f68, type: 2}
+  threshold: 10
+  label: Button Masher
+  description: I told you not to press that!

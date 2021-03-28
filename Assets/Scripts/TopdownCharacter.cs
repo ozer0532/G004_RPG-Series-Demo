@@ -7,6 +7,8 @@ public class TopdownCharacter : MonoBehaviour
     public float moveSpeed = 5;                                     // Revealing the move speed to the inspector
     public float interactRange;                                     // The range at which the player can interact with
 
+    public static TopdownCharacter instance;
+
     private Vector2 direction = Vector2.down;                       // Makes down as the default direction
 
     private Rigidbody2D rb;
@@ -16,6 +18,8 @@ public class TopdownCharacter : MonoBehaviour
     void Start() {
         rb = GetComponent<Rigidbody2D>();                           // Getting the Rigidbody2D component
         anim = GetComponent<Animator>();
+
+        instance = this;
     }
 
     private void Update() {

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea39aa19c2c4c64f8336498f2012837, type: 3}
+  m_Name: Pisang Ungu
+  m_EditorClassIdentifier: 
+  itemName: Pisang Ungu
+  itemDescription: ye
+  itemSprite: {fileID: 21300000, guid: e139074ef7328184cabc33192fa95535, type: 3}
+  weaponPrefab: {fileID: 4114103206781434051, guid: b622e85ed7199034fb3c7cd97d4b814d, type: 3}

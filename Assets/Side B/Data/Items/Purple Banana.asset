@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc32f2ae3395204591cd12a281dd090, type: 3}
+  m_Name: Purple Banana
+  m_EditorClassIdentifier: 
+  itemName: Purple Banana
+  itemDescription: What?
+  itemSprite: {fileID: 21300000, guid: 32ec0143b662a6e4891db378c8fc2596, type: 3}
+  weaponPrefab: {fileID: 2008722470212165385, guid: 5764d5d56b4f9934bba46926702b45f6, type: 3}

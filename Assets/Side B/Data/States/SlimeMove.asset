@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d975961d41d8e408fd539dc9d59aca, type: 3}
+  m_Name: SlimeMove
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 9cfb01c837cb7624c8df86b4f44b72a5, type: 2}
+  transitions:
+  - condition: {fileID: 11400000, guid: 334728053d39a394abcf18fbdcd39724, type: 2}
+    changeWhenFalse: 1
+    targetState: {fileID: 11400000, guid: 46e5380bab8baa745b5cc975ae8db07c, type: 2}
+  - condition: {fileID: 11400000, guid: 839fe4312c21057418b59b9883e78f0a, type: 2}
+    changeWhenFalse: 0
+    targetState: {fileID: 11400000, guid: dd26c36c18b975446bad985e8e4dcd18, type: 2}

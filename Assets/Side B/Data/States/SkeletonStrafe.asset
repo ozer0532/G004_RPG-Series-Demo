@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d975961d41d8e408fd539dc9d59aca, type: 3}
+  m_Name: SkeletonStrafe
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: e529416c6c7bd3b4d91a4446bd399e14, type: 2}
+  - {fileID: 11400000, guid: 40b29f657cf826843849468a1dc29923, type: 2}
+  transitions:
+  - condition: {fileID: 11400000, guid: 334728053d39a394abcf18fbdcd39724, type: 2}
+    changeWhenFalse: 1
+    targetState: {fileID: 11400000, guid: e2b5a8877a2022543bd469f5c38ead35, type: 2}
+  - condition: {fileID: 11400000, guid: 839fe4312c21057418b59b9883e78f0a, type: 2}
+    changeWhenFalse: 0
+    targetState: {fileID: 11400000, guid: 71b33d2f888eee14888398fa045a507c, type: 2}
